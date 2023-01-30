@@ -19,3 +19,13 @@ export function calcularMarca(marca){
     return incremento
 }
 
+export function calcularPlan(plan){
+    return plan == "1" ? 1.2 : 1.5
+}
+
+export function formatearDinero(cantidad){
+    return cantidad.toLocaleString('en-US',{
+        style: 'currency',
+        currency: "USD",
+    })
+}
